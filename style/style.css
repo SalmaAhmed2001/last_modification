@@ -1,0 +1,481 @@
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "DINOT";
+  src: url("../fonts/DINOT-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DINOT";
+  src: url("../fonts/DINOT-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DINOT";
+  src: url("../fonts/DINOT.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DINOT";
+  src: url("../fonts/DINOT-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+#myText {
+  display: none;
+  position: absolute;
+  bottom: 0;
+}
+
+body {
+  font-family: "DINOT", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav {
+  background-color: #222222 !important;
+}
+
+li>a {
+  color: white !important;
+}
+
+li :hover {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+li.active {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.bg-image {
+  background-image: url("../img/banner-bg.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 100% 100%;
+  min-height: 70vh;
+}
+
+
+
+
+
+/* -------------------------------- */
+
+
+
+
+
+/* Second section */
+
+
+
+
+.icon-container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFCF55;
+  border-radius: 10px;
+  border-radius: 0.5rem;
+
+  width: 6rem;
+  height: 4.2rem;
+
+}
+
+.icon-container i {
+  color: #000000;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* sec 3 */
+.containersection3 {
+
+  max-width: 100%;
+
+  background-color: #F4F4F4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.Choose {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+}
+
+h2.display-4 {
+  font-size: 3rem;
+  font-weight: 500;
+
+}
+
+.card {
+  border-radius: 10%;
+}
+
+
+.postGrid {
+  position: relative;
+}
+
+
+.logo {
+  position: absolute;
+  top: 6px;
+  left: 30px;
+}
+
+
+
+
+
+
+
+
+.img-container {
+  height: 50vh;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.padd_left {
+  padding-left: 20px;
+}
+
+.img-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.move-from-down-to-up {
+  animation: moveUp 1s ease-in-out;
+}
+
+@keyframes moveUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+.icon-container {
+  padding: 35px 35px;
+}
+
+@media (max-width: 576px) {
+  .cardest {
+    /* background-size: contain; */
+    min-height: 100%;
+    
+  }
+
+
+
+  .icon-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFCF55;
+    border-radius: 10px;
+    border-radius: 0.5rem;
+  
+    width: 3rem;
+    height:3rem;
+  
+  }
+  
+  .icon-container i {
+    color: #000000;
+    font-size: 25px;
+  }
+  .all-icons
+  {
+
+    padding-left: 15px;
+
+  }
+ .sec2img{
+  width: 600px;
+  height: 400px;
+  padding-left: 15px;
+ }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .cardest {
+   
+    min-height: 100%;
+    /* order: 2; */
+  } 
+
+
+  .kalam{
+
+    font-size: 3rem;
+    font-weight: bold;
+    word-break: break-word;
+  }
+  .icon-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFCF55;
+    border-radius: 10px;
+    border-radius: 0.5rem;
+  
+    width: 3rem;
+    height:3rem;
+  
+  }
+  
+  .icon-container i {
+    color: #000000;
+    font-size: 25px;
+  }
+
+
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .cardest {
+    /* background-size: contain; */
+    min-height: 100%;
+    /* order: 2; */
+    flex: 0 0 auto;
+  }
+ 
+  .icon-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFCF55;
+    border-radius: 10px;
+    border-radius: 0.5rem;
+  padding:30px 10px;
+    /* width: 8rem;
+    height:3rem; */
+  
+  }
+  
+  .icon-container i {
+    color: #000000;
+    font-size: 25px;
+  }
+
+
+  .grid_icons{
+    width: 40%;
+    height: 40%;
+    margin-left: auto;
+   
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+ 
+
+/*manar */
+@media (max-width: 992px) {
+  .cardest img {
+    max-width: 440px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    max-height: 350px;
+    padding-left: 60px;
+}
+}
+
+
+
+.cardest img{
+  position: absolute;
+  bottom: 0;
+}
+.cardest {
+  
+  position: relative;
+ 
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+ 
+.cardest img{
+  width:550px;
+}
+  .icon-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFCF55;
+    border-radius: 10px;
+    border-radius: 0.5rem;
+    /* width: 8rem;
+    height: 3rem; */
+    /* Change order to 1 */
+  }
+  .all-icons {
+    flex-direction: row; /* Reverse the order of items within the grid */
+  }
+}
+.all-icons{
+  padding-top: 20px;
+}
+
+@media (max-width:767px) {
+  .parent{
+    position: relative;
+    flex-direction: column-reverse;
+  }
+  .cardest img{
+    position: relative;
+    }
+   .kalam h1{
+    text-align: center;
+   }
+   .kalam h5{
+
+    text-align: center;
+    padding-bottom: 30px;
+   }
+   .icon-container{
+    padding: 20px 20px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+
+
+  .icon-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFCF55;
+    border-radius: 10px;
+    border-radius: 0.5rem;
+/*   
+    width: 3rem;
+    height:3rem; */
+   
+  
+  }
+  
+  .icon-container i {
+    color: #000000;
+    font-size: 25px;
+  }
+
+  .parent {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+
+   .cardest {
+    /* background-size: contain; */
+    
+    order: 2;
+    bottom: 0px;
+    left: 0px;
+    
+    width: 100%;
+  } 
+
+}
+
+/* ----============= */
+/*  */
+
+
+
+/* .section__box-icons .icon-liv {
+    min-width: 3.9rem;
+} */
+
+
